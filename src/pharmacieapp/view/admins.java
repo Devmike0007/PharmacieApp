@@ -270,7 +270,7 @@ public class admins extends javax.swing.JFrame {
 
         jLabel47.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel47.setForeground(new java.awt.Color(44, 73, 118));
-        jLabel47.setText("Pres nom ");
+        jLabel47.setText("Prenom ");
         jPanel10.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 70, -1, -1));
 
         jTextField8.setBackground(new java.awt.Color(219, 233, 248));
@@ -279,7 +279,7 @@ public class admins extends javax.swing.JFrame {
 
         jLabel43.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         jLabel43.setForeground(new java.awt.Color(44, 73, 118));
-        jLabel43.setText("Mot de pass");
+        jLabel43.setText("Mot de passe");
         jPanel10.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 150, -1, -1));
 
         jTextField9.setBackground(new java.awt.Color(219, 233, 248));
@@ -307,7 +307,7 @@ public class admins extends javax.swing.JFrame {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "Nom", "Pres nom", "Usernema", "Telephone", "Email", "Mot de pass"
+                "Nom", "Prenom", "Username", "Telephone", "Email", "Mot de pass"
             }
         ) {
             Class[] types = new Class [] {
