@@ -2,6 +2,11 @@
 
 Application de gestion de pharmacie développée en Java avec une architecture structurée suivant le modèle MVC (Model - View - Controller partiel avec DAO). Cette application permet de gérer les médicaments, les opérations et les données de manière organisée et maintenable.
 
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![NetBeans](https://img.shields.io/badge/NetBeans-1B6AC6?style=for-the-badge&logo=apache-netbeans-ide&logoColor=white)
+![MVC](https://img.shields.io/badge/Architecture-MVC-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-En%20développement-orange?style=for-the-badge)
+
 ---
 
 # Structure du projet
