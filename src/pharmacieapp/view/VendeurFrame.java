@@ -262,6 +262,7 @@ public class VendeurFrame extends javax.swing.JFrame {
 
         jPanel11.setBackground(new java.awt.Color(202, 234, 226));
         jPanel11.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jPanel11.setPreferredSize(new java.awt.Dimension(42, 38));
 
         jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pharmacieapp/view/shopping-cart (3).png"))); // NOI18N
 
@@ -272,7 +273,7 @@ public class VendeurFrame extends javax.swing.JFrame {
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel24)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
