@@ -8,12 +8,12 @@ package pharmacieapp.view;
  *
  * @author Marianah Marie
  */
-public class Vendeur extends javax.swing.JFrame {
+public class VendeurFrame extends javax.swing.JFrame {
 
     /**
      * Creates new form VendeurFrame
      */
-    public Vendeur() {
+    public VendeurFrame() {
         initComponents();
     }
 
@@ -85,8 +85,6 @@ public class Vendeur extends javax.swing.JFrame {
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jTabbedPane2 = new javax.swing.JTabbedPane();
         jPanel17 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
         jLabel34 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
@@ -96,14 +94,24 @@ public class Vendeur extends javax.swing.JFrame {
         jLabel39 = new javax.swing.JLabel();
         jLabel44 = new javax.swing.JLabel();
         jLabel45 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
+        jLabel42 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         jButton3 = new javax.swing.JButton();
+        jLabel40 = new javax.swing.JLabel();
+        jPanel16 = new javax.swing.JPanel();
+        jButton5 = new javax.swing.JButton();
+        jLabel43 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jScrollPane2.setPreferredSize(new java.awt.Dimension(1305, 1352));
+
+        jPanel1.setMinimumSize(new java.awt.Dimension(1303, 1345));
+        jPanel1.setPreferredSize(new java.awt.Dimension(1303, 1345));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setBackground(new java.awt.Color(0, 91, 255));
@@ -141,12 +149,11 @@ public class Vendeur extends javax.swing.JFrame {
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE))
-                .addContainerGap())
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 6, Short.MAX_VALUE))
         );
 
         jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 220, -1));
@@ -189,6 +196,7 @@ public class Vendeur extends javax.swing.JFrame {
         jSeparator2.setForeground(new java.awt.Color(204, 204, 204));
         jPanel3.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 1210, 276, -1));
 
+        jSeparator3.setBackground(new java.awt.Color(153, 153, 153));
         jSeparator3.setForeground(new java.awt.Color(204, 204, 204));
         jPanel3.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 1280, 276, -1));
 
@@ -199,7 +207,7 @@ public class Vendeur extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(204, 204, 204));
         jButton1.setText("DECONNEXION");
-        jButton1.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jButton1.setBorder(null);
         jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 1230, -1, 28));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 280, 1320));
@@ -254,6 +262,7 @@ public class Vendeur extends javax.swing.JFrame {
 
         jPanel11.setBackground(new java.awt.Color(202, 234, 226));
         jPanel11.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
+        jPanel11.setPreferredSize(new java.awt.Dimension(42, 38));
 
         jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pharmacieapp/view/shopping-cart (3).png"))); // NOI18N
 
@@ -264,7 +273,7 @@ public class Vendeur extends javax.swing.JFrame {
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel24)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -494,19 +503,6 @@ public class Vendeur extends javax.swing.JFrame {
 
         jPanel17.setBackground(new java.awt.Color(255, 255, 255));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Produit", "Quatité", "Prix", "Total"
-            }
-        ));
-        jScrollPane1.setViewportView(jTable1);
-
         jLabel34.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
         jLabel34.setForeground(new java.awt.Color(44, 73, 118));
         jLabel34.setText("FACTURE");
@@ -535,15 +531,8 @@ public class Vendeur extends javax.swing.JFrame {
         jLabel45.setForeground(new java.awt.Color(44, 73, 118));
         jLabel45.setText("--------------------------------------------------------------------------");
 
-        jButton5.setBackground(new java.awt.Color(0, 91, 255));
-        jButton5.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(233, 238, 243));
-        jButton5.setText("Imprimer");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
+        jLabel42.setForeground(new java.awt.Color(44, 73, 118));
+        jLabel42.setText("Date et heure ");
 
         javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
         jPanel17.setLayout(jPanel17Layout);
@@ -561,14 +550,11 @@ public class Vendeur extends javax.swing.JFrame {
                             .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel36)
                             .addComponent(jLabel37)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel41)
-                            .addComponent(jLabel39)
+                            .addComponent(jLabel42)
                             .addComponent(jLabel44)
-                            .addComponent(jLabel45)))
-                    .addGroup(jPanel17Layout.createSequentialGroup()
-                        .addGap(152, 152, 152)
-                        .addComponent(jButton5)))
+                            .addComponent(jLabel45)
+                            .addComponent(jLabel39)
+                            .addComponent(jLabel41))))
                 .addContainerGap(26, Short.MAX_VALUE))
         );
         jPanel17Layout.setVerticalGroup(
@@ -577,49 +563,107 @@ public class Vendeur extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel34)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 8, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel38)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel36)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel37)
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 8, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel38)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel36)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel37)
+                        .addGap(22, 22, 22))
+                    .addComponent(jLabel42))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, 4, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 382, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(378, 378, 378)
                 .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 7, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel44)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel45, javax.swing.GroupLayout.PREFERRED_SIZE, 5, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton5)
-                .addContainerGap(11, Short.MAX_VALUE))
+                .addContainerGap(13, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 680, 400, 620));
+        jPanel1.add(jPanel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 680, 400, 580));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pharmacieapp/view/shopping-cart (5).png"))); // NOI18N
-        jPanel2.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 30, -1, -1));
+        jPanel2.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, -1, -1));
 
         jLabel33.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel33.setForeground(new java.awt.Color(44, 73, 118));
         jLabel33.setText("Commande en cours");
-        jPanel2.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 30, -1, -1));
+        jPanel2.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, -1, -1));
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Produit", "Quatité", "Prix", "Total"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 339, 370));
 
         jButton3.setBackground(new java.awt.Color(0, 91, 255));
         jButton3.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(233, 238, 243));
         jButton3.setText("Valider");
-        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 370, 149, 37));
+        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 500, 149, 37));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 240, 370, 440));
+        jLabel40.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
+        jLabel40.setForeground(new java.awt.Color(44, 73, 118));
+        jLabel40.setText("TOTAL :");
+        jPanel2.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, -1, -1));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 240, 380, 560));
+
+        jPanel16.setBackground(new java.awt.Color(255, 255, 255));
+
+        jButton5.setFont(new java.awt.Font("Arial Narrow", 1, 14)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(44, 73, 118));
+        jButton5.setText("Imprimer facture");
+        jButton5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 1, true));
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+
+        jLabel43.setBackground(new java.awt.Color(0, 91, 255));
+        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pharmacieapp/view/print (2).png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
+        jPanel16.setLayout(jPanel16Layout);
+        jPanel16Layout.setHorizontalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel16Layout.createSequentialGroup()
+                .addGap(116, 116, 116)
+                .addComponent(jLabel43)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton5)
+                .addContainerGap(167, Short.MAX_VALUE))
+        );
+        jPanel16Layout.setVerticalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
+                .addContainerGap(20, Short.MAX_VALUE)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel43, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
+        jPanel1.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 1260, 400, 50));
 
         jScrollPane2.setViewportView(jPanel1);
 
@@ -631,7 +675,7 @@ public class Vendeur extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1450, Short.MAX_VALUE)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1325, Short.MAX_VALUE)
         );
 
         pack();
@@ -658,23 +702,21 @@ public class Vendeur extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Vendeur.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VendeurFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Vendeur.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VendeurFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Vendeur.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VendeurFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Vendeur.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VendeurFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Vendeur().setVisible(true);
+                new VendeurFrame().setVisible(true);
             }
         });
     }
@@ -718,7 +760,10 @@ public class Vendeur extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel5;
@@ -733,6 +778,7 @@ public class Vendeur extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
