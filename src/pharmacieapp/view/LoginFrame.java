@@ -67,7 +67,7 @@ public class LoginFrame extends javax.swing.JFrame {
         jLabel6.setText("Login");
 
         jLabel1.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        jLabel1.setText("User name :");
+        jLabel1.setText("Username :");
 
         jTextField1.setText("Entre votre d'utilisateur");
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
@@ -77,7 +77,7 @@ public class LoginFrame extends javax.swing.JFrame {
         });
 
         jLabel2.setFont(new java.awt.Font("Poppins Medium", 0, 18)); // NOI18N
-        jLabel2.setText("Pass word :");
+        jLabel2.setText("Password :");
 
         jTextField2.setText("Entre votre d'utilisateur");
         jTextField2.addActionListener(new java.awt.event.ActionListener() {

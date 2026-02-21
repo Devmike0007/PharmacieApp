@@ -19,7 +19,8 @@ public class PharmacieApp {
      java.awt.EventQueue.invokeLater(new Runnable(){
          public void run(){
             new LoginFrame().setVisible(false);
-            new Magasinier().setVisible(true);
+            new Magasinier().setVisible(false);
+            new VendeurFrame().setVisible(true);
          }
         });
         
