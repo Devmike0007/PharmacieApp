@@ -3,26 +3,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package pharmacieapp.util;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-/**
- *
- * @author Marianah Marie
- */
+
 public class DatabaseConnection {
-    private static final String URL = "jdbc:mysql://localhost:3306/pharmacie";
-    private static final String USER = "root";
-    private static final String PASSWORD = "";
-    
+
+    private static final String URL = "jdbc:sqlite:C:/Users/devmi/OneDrive/Documents/NetBeansProjects/PharmacieApp/src/pharmacieapp/pharmacie.db";
+
     public static Connection getConnection() throws SQLException {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            return DriverManager.getConnection(URL, USER, PASSWORD);
+            Class.forName("org.sqlite.JDBC"); // Driver SQLite
+            return DriverManager.getConnection(URL);
         } catch (ClassNotFoundException e) {
-            throw new SQLException("Driver MySQL non trouvé", e);
+            throw new SQLException("Driver SQLite non trouvé", e);
         }
     }
 }
-
-
